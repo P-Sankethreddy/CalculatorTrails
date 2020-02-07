@@ -1,9 +1,7 @@
 package com.EPAM_Task3.Calculator;
 
 import java.util.*;
-import java.io.*;
-import java.lang.*;
-import java.math.BigInteger;
+
 
 
 
@@ -14,12 +12,13 @@ import java.math.BigInteger;
 public class App 
 {
     public static void main( String[] args )
-    { Bussiness obj=new Bussiness();
+    {
+    	Bussiness obj=new Bussiness();
         Scanner scan=new Scanner(System.in);
         System.out.println("Simple Calculator");
         System.out.println("Enter two numbers");
-        BigInteger num1=scan.nextBigInteger();
-        BigInteger num2=scan.nextBigInteger();
+        int num1=scan.nextInt();
+        int num2=scan.nextInt();
         System.out.println("Choose the operation you need to perform on the two numbers");
         System.out.println("1)Addition...\n"
         		+ "2)Subtraction....\n"
